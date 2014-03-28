@@ -1,0 +1,1401 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Seminario UCD</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- font awesome -->
+        <link rel="stylesheet" href="resources/font-awesome-4.0.3/css/font-awesome.css">
+
+
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+        <style>
+            .reveal .slides section {
+                /* Fallback for web browsers that don't support RGBa */
+                background-color: rgb(0, 0, 0);
+                /* RGBa with 0.6 opacity */
+                background-color: rgba(0, 0, 0, 0.7);
+                /* For IE 5.5 - 7*/
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+                /* For IE 8*/
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+                padding: 1em;
+            }
+
+            .reveal i.fa{
+                font-family: 'FontAwesome';
+                font-style: normal;
+            }
+        </style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+                    <h4>Ordine degli Ingegneri della Provincia di Vicenza</h4>
+                    <h4>Commissione ICT</h4>
+					<h1>PANORAMICA</h1>
+                    <h2>DALL'ERGONOMIA COGNITIVA ALLO USER EXPERIENCE DESIGN</h2>
+					<h3>PER UNA PROGETTAZIONE CENTRATA SULL'UTENTE</h3>
+                    <h4>22 Marzo 2014</h4>
+					<p>
+						<small>Relatore <a href="http://marco.duss.in" target="_new">Marco Dussin</a> / <a href="http://twitter.com/marcodussin" target="_new">@marcodussin</a></small>
+					</p>
+				</section>
+
+                <section>
+                    <h1>Qualcosa su di me</h1>
+                    <img src="resources/marco.jpg"/>
+                    <p>Front and back end engineer</p>
+                    <p><i class="fa fa-envelope"></i> marco@duss.in</p>
+                    <p><i class="fa fa-twitter-square"></i> @marcodussin</p>
+                    <p><i class="fa fa-linkedin-square"></i> it.linkedin.com/in/marcodussin/</p>
+                </section>
+
+                <section>
+                    <h1>Qualcosa su di voi</h1>
+                    <img class="stretch" src="resources/Who_Are_You_album_cover.JPG"/>
+                    <p>
+                    <a href="http://www.youtube.com/watch?v=PdLIerfXuZ4" target="_blank">The Who - Who Are You?</a>
+                    </p>
+                </section>
+
+                <section>
+                    <iframe width="960" height="720" src="//www.youtube.com/embed/5RXX-PiifXY?rel=0" frameborder="0" allowfullscreen></iframe>
+                    <small>Julio Velasco - "Gli schiacciatori NON parlano dell'alzata, la risolvono" </small>
+                </section>
+
+                <section>
+                    <h1>Qualcosa sul corso</h1>
+                    <p class="fragment">Panoramica</p>
+                    <p class="fragment">dall'ergonomia cognitiva</p>
+                    <p class="fragment">allo user experience design</p>
+                    <p class="fragment">per una progettazione</p>
+                    <p class="fragment">centrata sull’utente</p>
+                </section>
+
+                <section>
+                    <img src="resources/Pomodoro-Technique-Timer.jpg" class="stretch"/>
+                    <table>
+                       <thead>
+                        <tr>
+                            <th>Argomento</th>
+                            <th>Pomodori</th>
+                        </tr>
+                       </thead>
+                        <tr>
+                            <td>Introduzione</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Ergonomia cognitiva secondo Norman</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Sistemi interattivi e architettura dell'informazione</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>UX design</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Emotional design</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Progettazione <UX></UX></td>
+                            <td>1</td>
+                        </tr>
+                        <tfoot>
+                        <tr>
+                            <td style="border-top:thin solid white;">Totale</td>
+                            <td style="border-top:thin solid white;">6</td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </section>
+
+                <section>
+                    <video src="resources/SergeyBrin_2013-480p-it.mp4" controls></video>
+                    <small>Sergey Brin (Google): Perché Google Glass?</small>
+                </section>
+
+                <section>
+                    <h1>Ergonomia</h1>
+                </section>
+
+                <section>
+                    <p class="fragment">Il termine "Ergonomia" è stato usato per la prima volta da Wojciech Jastrzębowski in un giornale polacco nel 1857</p>
+                    <br>
+                    <h3>Ergonomia: dal greco <i>érgon</i> (lavoro) e <i>ńomos</i> (regola, legge)</h3>
+                    <br>
+                    <p class="fragment">Nel 1949 lo psicologo K. F. H. Murrell diede al termine il significato attuale:</p>
+                </section>
+
+                <section>
+                    <blockquote>...è quella scienza che si occupa dell'interazione tra gli elementi di un sistema (umani e d'altro tipo) e la funzione per cui vengono progettati (nonché la teoria, i principi, i dati e i metodi che vengono applicati nella progettazione), allo scopo di migliorare la soddisfazione dell'utente e l'insieme delle prestazioni del sistema <small>I.E.A. (International Ergonomics Association)</small></blockquote>
+                </section>
+
+                <section>
+                    <img class="stretch" src="resources/401px-Chicago_world's_fair,_a_century_of_progress,_expo_poster,_1933,_2.jpg"/>
+                    <blockquote>Science Finds, Industry Applies, Man Conforms (La scienza scopre. L'industria applica. L'uomo si adegua)</blockquote>
+                    <small>Motto della Chicago World's Fair del 1933</small>
+                </section>
+
+                <section>
+                    <img src="resources/Computer_Workstation_Variables.jpg"/>
+                    <p><small>Integrated Safety Management, Berkeley Lab</small></p>
+                </section>
+
+                <section>
+                    <img class="stretch" src="resources/DonNorman2003-5.jpg"/>
+                    <blockquote>...mentre tutti diamo la colpa a noi stessi, il vero responsabile – il cattivo design – passa inosservato. E' l'ora di cambiare”
+                    </blockquote>
+                    <small>Don Norman 1996</small>
+                </section>
+
+                <section>
+                    <h1>Ergonomia</h1><h2>cognitiva</h2>
+                </section>
+
+                <section>
+                    <blockquote>
+                        L'ergonomia cognitiva ha come oggetto di studio l'interazione tra il sistema cognitivo
+                        umano e gli strumenti per l'elaborazione di informazione. La conoscenza prodotta da
+                        questo studio è utilizzata per supportare la progettazione di strumenti appropriati per i
+                        più svariati usi, dal lavoro, all'educazione, al divertimento
+                    </blockquote>
+                    <small>Società Europea di Ergonomia Cognitiva</small>
+                </section>
+
+                <section>
+                    <img class="stretch" src="resources/93592ca.jpeg"/>
+                    <p>Donald Norman: La caffettiera del masochista. Psicopatologia degli oggetti quotidiani, Giunti, 1988</p>
+                </section>
+
+                <section>
+                    <p>I principi che un buon design dovrebbe seguire sono:</p>
+                    <ul>
+                        <li>fornire visibilità;
+                        <li>fornire un buon mapping;
+                        <li>fornire inviti e vincoli all'uso;
+                        <li>fornire feedback;
+                        <li>fornire consistenza;
+                        <li>fornire un buon modello concettuale.
+                    </ul>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Fornire</h3><h2>visibilità</h2>
+                        <img class="stretch" src="resources/fantozzi.jpg"/>
+                        <p>
+                            Esercizio: "la mia automobile"
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Fornire visibilità (1)</h3>
+                        <p>
+                            Tutte le parti funzionali devono essere visibili e devono fornire il messaggio corretto su quello che si può fare
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Fornire visibilità (2)</h3>
+                        <p>
+                            Le relazioni tra ciò che vogliamo fare e le parti dell'oggetto su cui agire devono essere evidenti.
+                        </p>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/rubinetti.jpg"/>
+                        <small>Rubinetti Treemme "Philo"</small>
+                    </section>
+
+
+                    <section>
+                        <h3>Fornire visibilità (3)</h3>
+                        <p>
+                            Il numero delle funzioni disponibili non deve superare eccessivamente il numero dei comandi utilizzabili
+                        </p>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/Google%202013-10-14%2002-18-32.png"/>
+                        <small>Homepage di Google.it</small>
+                    </section>
+
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Fornire un buon</h3><h2>mapping</h2>
+                        <img class="stretch" src="resources/sdc10068.jpg"/>
+                        <p>
+                            Esercizio: "i miei fornelli"
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Fornire un buon mapping (1)</h3>
+                        <p>
+                            Mapping significa correlazione tra la configurazione dei comandi disponibili per un dato oggetto
+                            e la configurazione delle parti di tale oggetto in cui si manifestano i risultati prodotti
+                        </p>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/switch-h.jpg"/>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/yswyv.jpg"/>
+                    </section>
+
+                    <section>
+                        <h3>Fornire un buon mapping (2)</h3>
+                        <p>
+                            ...senza obbligare l'utente a sforzi mnemonici o a procedere "per tentativi"
+                        </p>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/ag_08e320_pwrseat.jpg"/>
+                        <p><small>Powerseat di una Mercedes-Benz E320 BLUETEC del 2008</small></p>
+                    </section>
+
+                    <section>
+                        <h3>Fornire un buon mapping (3)</h3>
+                        <p>
+                            Bisogna prestare particolare attenzione ai modelli culturali consolidati degli utenti
+                        </p>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/3683133183_d385edc877.jpg"/>
+                    </section>
+
+
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Fornire</h3><h2>inviti e vincoli all’uso</h2>
+                        <img class="stretch" src="resources/4870920248_479e8a2a4e.jpg"/>
+                        <p>
+                            Esercizio: "la mia porta"
+                        </p>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/classic.jpg"/>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/Comcast.jpg"/>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/IMG_0981.JPG"/>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/mri.jpg"/>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/330.jpg"/>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/doors.png"/>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/CognitiveAffordance.jpg"/>
+                    </section>
+
+                    <section>
+                        <h3>Fornire inviti e vincoli all’uso (1)</h3>
+                        <ul>
+                            <li>
+                                Inviti (affordance): sono proprietà concrete e reali dell'oggetto che invitano l'utente
+                                ad utilizzarlo in un certo modo
+                            </li>
+                            <li>
+                                Vincoli (constraints): sono proprietà concrete o funzionalità progettate in modo tale da
+                                vincolare l'utente ad un dato uso dell'oggetto
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/forbice_kinesiology_taping_k-active.jpg"/>
+                        <p><small>Forbice Professionale K-Active Taping</small></p>
+                    </section>
+
+                    <section>
+                        <h3>Fornire inviti e vincoli all’uso (2)</h3>
+                        <p>Vincoli e inviti possono essere fisici, semantici, culturali o logici</p>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/Il_telefono_Bigrigio.JPG"/>
+                    </section>
+
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Fornire</h3><h2>feedback</h2>
+                        <img class="stretch" src="resources/lampadina-bruciata.jpg"/>
+                        <p>Esercizio: "il mio interruttore della luce"</p>
+                    </section>
+
+                    <section>
+                        <h3>Fornire feedback (1)</h3>
+                        <p class="fragment">
+                            Pemettere all'utente di capire immediatamente, in modo sincronizzato, quale conseguenza ha seguito la sua azione,
+                            perchè possa verificare se è stata effettuata secondo le sue aspettative.
+                        </p>
+                        <p class="fragment">
+                            Se l'azione non può essere percepita, sono buoni sostituti a tale percezione i suoni, i colori, i cambiamenti di forma
+                            negli oggetti...
+                        </p>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/ascensore.png"/>
+                    </section>
+
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Fornire</h3><h2>consistenza</h2>
+                        <img class="stretch" src="resources/5-cards.png"/>
+                        <p>Esercizio: "le carte da gioco"</p>
+                    </section>
+
+                    <section>
+                        <h3>Fornire consistenza (1)</h3>
+                        <p class="fragment">
+                            Progettare interfacce affinchè permettano simili operazioni ed utilizzino comandi simili
+                            per compiere compiti simili.
+                        </p>
+                        <p class="fragment">
+                            Permette all'utente di trasferire velocemente la conoscenza già acquisita a nuovi contesti e concentrarsi
+                            quindi sulle operazioni di rilievo.
+                        </p>
+                        <p class="fragment">
+                            Può essere controproducente.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Fornire consistenza (2)</h3>
+                        <p>Ci sono 4 tipi di consistenza:</p>
+                        <ol>
+                            <li class="fragment">
+                                estetica (es: riconoscere una "Mercedes" da una "BMW")
+                            </li>
+                            <li class="fragment">
+                                funzionale (es: i colori del semaforo)
+                            </li>
+                            <li class="fragment">
+                                interna (es: le segnalazioni dei sentieri di montagna)
+                            </li>
+                            <li class="fragment">
+                                esterna (es: le interfacce dei programmi per un dato sistema operativo)
+                            </li>
+                        </ol>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Fornire un buon</h3><h2>modello concettuale</h2>
+                        <img class="stretch" src="resources/a55e9fa842c2348c4988965d043e6836.jpg"/>
+                        <p>Esercizio: "il mio termostato"</p>
+
+                    </section>
+
+                    <section>
+                        <h3>Fornire un buon modello concettuale (1)</h3>
+                        <p>
+                            Interagendo con un sistema (software o di altro tipo), una persona si costruisce nella testa
+                            un concetto mentale di che cosa il sistema e i suoi componenti siano,
+                            che proprietà abbiano e quali siano le interazioni possibili con essi. E' quindi la struttura
+                            delle convinzioni che una persona ha rispetto al modo in cui funziona una certa cosa.
+                        </p>
+                    </section>
+
+                </section>
+
+                <section>
+                    <h3>I principi che un buon design dovrebbe seguire sono:</h3>
+                    <ul>
+                        <li>fornire visibilità;
+                        <li>fornire un buon mapping;
+                        <li>fornire inviti e vincoli all'uso;
+                        <li>fornire feedback;
+                        <li>fornire consistenza;
+                        <li>fornire un buon modello concettuale.
+                    </ul>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Allora come mai spesso le persone preferiscono agli oggetti semplici quelli</h2>
+                        <h1>complessi?</h1>
+                    </section>
+
+                    <section>
+                        <h2>Complesso</h2><h3>vs</h3><h2>confuso</h2>
+                        <p>Abbiamo bisogno di complessità anche quando desideriamo semplicità</p>
+                        <p class="fragment">Esercizio: le funzioni del cellulare</p>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/ti83.jpg"/>
+                    </section>
+
+                    <section>
+                        <h3 class="fragment">La complessità è desiderata</h3>
+                        <img class="stretch" src="resources/Nespresso_boutique.JPG"/>
+                        <p class="fragment">
+                            La complessità è cerimonia e rituale, e il rituale dà il senso di appartenenza a una data cultura
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>La complessità è accettata comunemente</h3>
+                        <ul>
+                            <li class="fragment">Orologio</li>
+                            <li class="fragment">Alfabeto</li>
+                            <li class="fragment">Musica</li>
+                        </ul>
+                        <p class="fragment">E' compito del progettista dare alle persone <b>modelli concettuali</b> appropriati.</p>
+                        <p class="fragment">Ad esempio nel computer:</p>
+                        <ul>
+                            <li class="fragment">File</li>
+                            <li class="fragment">Album fotografico</li>
+                            <li class="fragment">Mappa</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>La differenza tra una cosa semplice ed una complessa sta nel</h3>
+                        <h2>modello concettuale del suo funzionamento</h2>
+                        <h3>possieduto da chi la usa</h3>
+                    </section>
+
+                    <section>
+                        <blockquote>
+                            La complessità totale di un sistema è costante: se si semplifica l'interazione per la persona
+                            aumenta la complessità dietro alle quinte.
+                        </blockquote>
+                        <small>Larry Tesler (Apple) - Legge di Tesler della conservazione della complessità</small>
+                    </section>
+
+                </section>
+
+
+                <!-- fine ergonomia-->
+                <!-- inizio hci -->
+
+                <section>
+                    <h1>Sistemi interattivi</h1>
+                </section>
+
+                <section>
+                    <p>Comunicazione tra essere umano e un sistema (ad esempio un computer: HCI)</p>
+                    <p>Lo scopo è la progettazione e lo sviluppo di sistemi interattivi che siano usabili, affidabili e che supportino e facilitino le attività umane.</p>
+                    <li class="fragment">modelli di interazione</li>
+                    <li class="fragment">ergonomia</li>
+                    <li class="fragment">stili di interazione</li>
+                    <li class="fragment">contesto sociale, organizzativo e motivazionale</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Modelli di interazione (1)</h3>
+                        <p>Donald Norman stabilisce <i>7 stadi dell'azione</i>:</p>
+                        <ol>
+                            <li class="fragment">L'utente stabilisce lo <i>scopo</i></li>
+                            <li class="fragment">L'utente formula l'<i>intenzione</i></li>
+                            <li class="fragment">L'utente <i>specifica</i> le azioni da compiere tramite l'interfaccia</li>
+                            <li class="fragment">Il sistema <i>esegue</i> l'azione</li>
+                            <li class="fragment">L'utente <i>percepisce</i> lo stato del sistema</li>
+                            <li class="fragment">L'utente <i>interpreta</i> lo stato del sistema</li>
+                            <li class="fragment">L'utente <i>valuta</i> lo stato del sistema rispetto allo scopo</li>
+                        </ol>
+                        <p class="fragment">Esecuzione e valutazione sono in un loop continuo</p>
+                    </section>
+
+                    <section>
+                        <h3>Modelli di interazione (2)</h3>
+                        <p>Secondo Norman alcuni sistemi sono più difficili da usare di altri perchè ci si trova ad annaspare nell'attraversare:</p>
+                        <ul>
+                            <li class="fragment">
+                                il <b>golfo dell'esecuzione</b>: quando la formulazione delle azioni da parte dell'utente non
+                                coincide con le azioni permesse dal sistema
+                            </li>
+                            <li class="fragment">
+                                il <b>golfo della valutazione</b>: quando le aspettative di cambiamento sullo stato del sistema da
+                                parte dell'utente sono diverse dallo stato raggiunto dal sistema stesso
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Modelli di interazione (3)</h3>
+                        <img class="stretch" src="resources/image004.gif"/>
+                    </section>
+
+                    <section>
+                        <h3>Modelli di interazione (4)</h3>
+                        <p>Gli psicologi, come James Reason, che hanno tenuto dei cosiddetti "diari cognitivi" di ogni proprio errore, anche il più banale, hanno messo in evidenza come commettiamo errori sistematicamente e quotidianamente.</p>
+                    </section>
+
+                    <section>
+                        <h3>Modelli di interazione (5)</h3>
+                        <img class="stretch" src="resources/cheese.gif"/>
+                        <small>James Reason: modello <i>del formaggio svizzero</i></small>
+                    </section>
+
+                    <section>
+                        <h3>Modelli di interazione (6)</h3>
+                        <img class="stretch" src="resources/cheese2.gif"/>
+                        <small>James Reason: modello <i>del formaggio svizzero</i></small>
+                    </section>
+
+
+
+                    <section>
+                        <h3>Modelli di interazione (7)</h3>
+                        <p class="fragment">Possiamo distinguere tra due tipi di errore:</p>
+                        <ul>
+                            <li class="fragment">
+                                <h3>SLIP:</h3>l'utente ha capito correttamente il sistema e il suo scopo, ha formulato correttamente
+                                l'azione ma ha compiuto poi una azione sbagliata (oppure la ha omessa, nel qual caso si usa anche il termine <b>LAPSE</b>).
+                                Sono errori di esecuzione di una azione corretta.
+                            </li>
+                            <li class="fragment"><h3>MISTAKE:</h3>l'utente e il sistema non riescono ad avere lo stesso scopo.
+                                Sono gli errori dovuti ad una azione non appropriata, anche se potenzialmente corretta.
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <blockquote>
+                            "Slips result from automatic behavior... Mistakes result from conscious deliberations" [D. Norman]
+                        </blockquote>
+                        <p>
+                            Gli slip sono errori di esecuzione, mentre i mistake sono errori di pianificazione.
+                            Lo slip può essere risolto con un migliore design dell'interfaccia, il mistake con una migliore
+                            comprensione del sistema.
+                        </p>
+                    </section>
+
+
+                    <section>
+                        <h3>Modelli di interazione (8)</h3>
+                        <p>Un luogo comune da sfatare è che rendendo le tecnologie che usiamo sempre più pervasive e automatiche,
+                            ci proteggiamo dai rischi di errori. Ci sono delle situazioni,
+                            per le quali la psicologa Lisanne Baindbridge ha coniato il termine di «ironie dell'automazione»
+                            [<a href="http://j.mp/ironies" target="_blank">http://j.mp/ironies</a>], dove può accadere il contrario.</p>
+                    </section>
+
+                </section>
+
+                <section>
+                    <h3>Stili di interazione</h3>
+                    <ul>
+                        <li class="fragment">Interfacce a controllo vocale</li>
+                        <li class="fragment">Look... Es: sistemi WIMP (windows, icons, menus, and pointer)</li>
+                        <li class="fragment">...and feel Es: Windows vs Mac vs Linux</li>
+                        <li class="fragment">Multitouch</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Gli stili di interazione sono strettamente legati ai modelli.
+                        Assieme sono la colla che tiene uniti i sistemi, definendo il modo in cui tutti i sottosistemi
+                        si relazionano l'un l'altro.</p>
+
+                    <p class="fragment">Ad esempio in MS Word lo stile e modello di interazione è quello di essere davanti
+                        ad una macchina da scrivere con un foglio inserito. Si possono fare molte più cose che con una
+                        semplice macchina da scrivere, ma il modello sottostante rimane fermamente quello.</p>
+                    <p class="fragment">Excel riflette il modello di un commercialista che mette in riga e colonna i conti,
+                        Powerpoint quello di una serie di lucidi messi sul proiettore uno dopo l'altro.</p>
+                </section>
+
+                <section>
+                <section>
+                    <h3>Come aiutare l'utente?</h3>
+                    <h2>Don't make me think</h2>
+                    <img class="stretch" src="resources/dont-make-me-think.jpg"/>
+                    <small>Steve Krug / New Riders / 2005 (2nd Edition)</small>
+                </section>
+
+               <section>
+                        <h3>1/10: Usabilità significa...</h3>
+                        <p class="fragment">Essere sicuri che qualcosa funzioni per bene, e che una persona
+                            di media abilità o esperienza la possa usare per lo scopo per cui suppone sia stata
+                            progettata senza esserne inevitabilmente frustrata</p>
+                        <img class="stretch" src="resources/esempi-poco-usabili.png"/>
+                    </section>
+
+                    <section>
+                        <blockquote>
+                            Il grado in cui un prodotto può essere usato da particolari utenti per raggiungere certi obiettivi con efficacia, efficienza, soddisfazione in uno specifico contesto d’uso
+                        </blockquote>
+                        <small>Definizione ISO 9421</small>
+                        <blockquote>
+                            La capacità di un sistema di essere compreso, appreso, utilizzato e attraente per gli utenti quando usato sotto condizioni specificate
+                        </blockquote>
+                        <small>ISO/IEC 2001a</small>
+                    </section>
+
+                    <section>
+                        <h3>2/10: Le applicazioni dovrebbero essere in grado di spiegare se stesse</h3>
+                        <p>In modo evidente ed autoesplicativo</p>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/Patente_indicazioni.jpg"/>
+                        <img class="stretch fragment" src="resources/Patente_1v4.jpg"/>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/angryBirdsTutorial.jpg"/>
+                    </section>
+
+                    <section>
+                        <h3>3/10: Non farmi pensare</h3>
+                        <p>Il non dedicare abbastanza attenzione da parte del progettista nel rendere le cose
+                            "ovvie" mina la fiducia che si instaura tra lui e gli utilizzatori</p>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/trenitalia.png"/>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/Candy-Crush-Saga-Life.jpg"/>
+                    </section>
+
+
+                    <section>
+                        <h3>4/10: Non farmi perdere tempo</h3>
+                        <p>Gran parte degli utilizzatori di un applicativo o di un sito web lo fanno perchè
+                            il suo utilizzo dovrebbe permettere loro di risparmiare tempo. In particolare gli utilizzatori
+                            di un sito web sono continuamente in movimento di pagina in pagina</p>
+                    </section>
+
+                    <section>
+                        <h3>5/10: Lasciami il pulsante "indietro" del browser</h3>
+                        <p>Il pulsante "back" è uno dei più utilizzati e dovrebbe essere usato per permettere all'utente
+                            di ritornare sui propri passi in caso di errore in modo agevole e intuitivo</p>
+                    </section>
+
+                    <section>
+                        <h3>6/10: Sono abitudinario</h3>
+                        <p>Quando scopriamo una cosa che funziona, tendiamo a ripeterla. E se anche lo fa in un modo
+                            che non è il migliore dei modi, siamo pigri nel cercarne un altro. Ma se ci imbattiamo in una
+                            modalità migliore, spesso abbandoniamo il modo di fare precedente per sempre</p>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/8573513727_d827a69c36_b.jpg"/>
+                    </section>
+
+                    <section>
+                        <h3>7/10: Non ho tempo da perdere in chiacchiere</h3>
+                        <p>Un applicativo dovrebbe permetterci di arrivare subito al sodo, senza troppe smancerie e
+                            messaggi roboanti ed euforici</p>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/expensify.png"/>
+                    </section>
+
+                    <section>
+                        <h3>8/10: Non farmi perdere di vista come posso fare una ricerca</h3>
+                        <p>Molti utenti preferiscono sempre l'approccio ai sistemi basato sulla ricerca. Sono utenti
+                            simili a quelli che, appena entrati in un negozio, hanno bisogno di interpellare subito il
+                            primo commesso disponibile</p>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/govuk.png">
+                    </section>
+
+                    <section>
+                        <h3>9/10: Lasciami costruire il mio modello concettuale e la mia mappa mentale</h3>
+                        <p>Affinchè io possa sempre riprendere il mio cammino da dove ero arrivato e non debba
+                            continuamente chiedermi dove si trovano le cose che mi interessano</p>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/usability-krug-01.jpg"/>
+                    </section>
+
+                    <section>
+                        <h3>10/10: Permettimi di ritornare velocemente a casa, "at <i>home"</i>"</h3>
+                        <p>Un pulsante sempre visibile che permetta il ritorno all'inizio o alla dashboard
+                            trasmette un senso di rassicurazione, perchè non fa mai sentire perso l'utente e gli dà sempre
+                            la possibilità, per qualsiasi motivo, di fare un "reset" di ciò che stava facendo</p>
+                    </section>
+
+                </section>
+
+                <section>
+                <section>
+                    <h3>Gov.uk design principles</h3>
+                    <a href="https://www.gov.uk/designprinciples" target="_blank">https://www.gov.uk/designprinciples</a>
+                    <img class="stretch" src="resources/govuk.png"/>
+                </section>
+
+
+
+                    <section>
+                        <ol>
+                            <li>Start with needs*
+                            <li>Do less
+                            <li>Design with data
+                            <li>Do the hard work to make it simple
+                            <li>Iterate. Then iterate again.
+                            <li>Build for inclusion
+                            <li>Understand context
+                            <li>Build digital services, not websites
+                            <li>Be consistent, not uniform
+                            <li>Make things open: it makes things better
+                        </ol>
+                    </section>
+
+                    <section>
+                        <h2>Start with needs*</h2>
+                        <h3>*user needs not your needs</h3>
+                        <p class="fragment">Il processo di design deve iniziare identificando, analizzando, pensando ai bisogni di utenti reali, e non attorno al modo in cui il processo è ufficialmente allo stato attuale delle cose</p>
+                        <p class="fragment">Questi bisogni si analizzano dati alla mano, non facendo assunzioni</p>
+                        <p class="fragment">NB: ciò che gli utenti chiedono non è detto sia ciò di cui hanno bisogno</p>
+                    </section>
+
+                    <section>
+                        <h2>Do less</h2>
+                        <p class="fragment">Il nostro sito/servizio dovrebbe fare solo e soltanto ciò che solo il nostro sito/servizio è in grado di fare</p>
+                        <p class="fragment">Se qualcun'altro lo fa già, linkiamolo</p>
+                        <p class="fragment">Fornire API è un buon modo per invitare altri a fornire servizi aggiuntivi basati sul nostro</p>
+                    </section>
+
+                    <section>
+                        <h2>Design with data</h2>
+                        <p class="fragment">Solitamente non partiamo mai da zero, ma da un servizio che ha già utenti e che ci permettono di imparare dal loro modo di fare reale</p>
+                        <p class="fragment">Il processo di prototipizzazione, sviluppo e rilascio è un ciclo continuo che produce dati dall'analisi "live" degli utenti: questi dati vanno tenuti in considerazione</p>
+                    </section>
+
+                    <section>
+                        <h2>Do the hard work to make it simple</h2>
+                        <p class="fragment">Far sembrare qualcosa semplice è facile...</p>
+                        <p class="fragment"><i>...non sempre</i></p>
+                        <p class="fragment">Far sembrare qualcosa semplice da usare è ben più difficile, soprattutto se il sistema sotteso è complesso...</p>
+                        <p class="fragment">ma ci dobbiamo riuscire. Punto.</p>
+                    </section>
+
+                    <section>
+                        <img class="stretch" src="resources/simple.jpg"/>
+                    </section>
+
+                    <section>
+                        <h2>Iterate. Then iterate again.</h2>
+                        <p class="fragment">Il miglior modo per creare un sito/servizio efficace è di iniziare dal piccolo e, per iterazioni successive, ingrandirsi</p>
+                        <p class="fragment">Dopo la release del "Minimum Viable Product", questo va testato con utenti reali, di modo che siano i loro feedback a portare alle versioni alpha, beta, ecc.</p>
+                    </section>
+
+                    <section>
+                        <h2>Build for inclusion</h2>
+                        <p class="fragment">Un prodotto dovrebbe essere il più accessibile, comprensibile, leggibile possibile</p>
+                        <p class="fragment">Anche a costo di sacrificare l'eleganza</p>
+                    </section>
+
+                    <section>
+                        <h2>Understand context</h2>
+                        <p class="fragment">I nostri utenti non sono schermi, ma persone.</p>
+                        <p class="fragment">Che persone sono? Useranno il sito/servizio a casa, al lavoro, in macchina? Su che dispositivi (nuovi, vecchi, mobile)? Cosa sono abituati a usare (Facebook, Twitter...)? O forse sono utenti non abituati a usare un sito/servizio?</p>
+                    </section>
+
+                    <section>
+                        <h2>Build digital services, not websites</h2>
+                        <p class="fragment">Il servizio che forniamo non si limita al sito in se'.</p>
+                        <p class="fragment">Dobbiamo tenere in mente l'ecosistema digitale in cui è inserito, e anche quello analogico</p>
+                    </section>
+
+                    <section>
+                        <h2>Be consistent, not uniform</h2>
+                        <p class="fragment">Quando possibile è bene usare lo stesso linguaggio e gli stessi patterns di design</p>
+                        <p class="fragment">E quando non è possibile, è bene cercare di mantenere comunque un approccio consinstente</p>
+                    </section>
+
+                    <section>
+                        <h2>Make things open: it makes things better</h2>
+                        <p class="fragment">Con i colleghi, con gli utenti, con il mondo intero:</p>
+                        <p class="fragment">ogni occasione è buona per condividere codice, design, idee, intenzioni, fallimenti</p>
+                    </section>
+
+                </section><!-- end Gov.uk design principles list -->
+
+                <section>
+                    <h1>Architettura dell'informazione</h1>
+                </section>
+
+                <section>
+                    <p>Storicamente il termine "architetto dell'informazione" è attribuito a Richard Saul Wurman</p>
+                    <p>E' la struttura organizzativa logica e semantica delle informazioni, dei contenuti, dei processi e delle funzionalità di un sistema o un'applicazione informatica.</p>
+                    <p>Comprende l'analisi, la scelta e la progettazione degli strumenti tecnici e culturali per l'organizzazione, la catalogazione, la ricerca, la navigazione e la presentazione di contenuti e dati nei vari formati disponibili (digitali e non).</p>
+                </section>
+
+                <section>
+                    <h2>Non è:</h2>
+                    <ul>
+                        <li>Graphic design</li>
+                        <li>Software development</li>
+                        <li>Usability Engineering</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>E' però a supporto di:</h2>
+                    <ul>
+                        <li>Usabilty</li>
+                        <li>Findability</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Cerchiamo di capire cos'è con un piccolo esempio</h2>
+                        <h3>Il paradosso della scelta in profumeria (vedi <a href="http://trovabile.org/articoli/paradosso-scelta-profumeria">trovabile.org</a>)</h3>
+                    </section>
+
+                    <section>
+                        <p>Tutte le profumerie hanno per lo più il medesimo layout, con i profumi suddivisi generalmente per sesso e poi per marca: ma questo criterio soddisfa solo il cliente che sa già cosa vuole. Per gli altri, specie in presenza di un numero elevato di prodotti, questa organizzazione può tradursi in un vero e proprio paradosso della scelta.</p>
+                    </section>
+
+                    <section>
+                        <img src="resources/5e91958d4c9150ac5436c5b342d2c0d5.jpg" class="stretch"/>
+                    </section>
+
+                    <section>
+                        <p>
+                            L'obbiettivo di una profumeria è spingere a un acquisto che crei benessere personale permetta di esternare il proprio carattere.
+                        </p>
+                        <p>
+                            Ma come aiutare l’utente a scegliere il giusto profumo per la sua personalità?
+                        </p>
+                        <ul>
+                            <li class="fragment">Come può un cliente che non ha mai comprato un profumo scegliere quello adatto alla sua persona?
+                            <li class="fragment">Come può scegliere la marca del suo profumo se non provando tutti i prodotti che offre quel determinato settore?
+                            <li class="fragment">Come si può scegliere di regalare un profumo basandosi solo sulla marca?
+                        </ul>
+                    </section>
+
+                    <section>
+                        <p>In un saggio del 2002 Marcia Bates offre una sintesi dei modelli comportamentali di ricerca dell’informazione (information seeking). </p>
+                        <img class="stretch" src="materiale/bates.gif"/>
+                    </section>
+
+                    <section>
+                        <img src="resources/bates2.png" class="stretch">
+                        <p>La quasi totalità (94%) del nostro bagaglio conoscitivo deriva quindi da una modalità passiva di acquisizione delle informazioni.</p>
+                        <p>Vige cioè il principio del <b>minimo sforzo</b></p>
+                    </section>
+
+                    <section>
+                        <p class="fragment">La profumeria soddisfa solo gli utenti che fanno "searching", facendo leva sulla "coerenza" della sua classificazione.</p>
+                        <p class="fragment">Il suo sistema di classificazione non è <b>flessibile</b>. Per esserlo dovrebbe soddisfare tutte le strategie (quella attive e quella passive; quelle consapevoli e quelle non), rispettando se possibile anche al coerenza; e se non è possibile rinunciando a quest’ultima.</p>
+                        <p class="fragment">È dimostrato che una scelta troppo vasta di prodotti crea una non-scelta: quello che Schwartz chiama appunto paradosso della scelta. </p>
+                    </section>
+
+                    <section>
+                        <h3>Esercizio: ideare una modalità diversa che aiuti gli utenti più "pigri"</h3>
+                        <p class="fragment">Individuiamo le <b>"persone"</b></p>
+                        <p class="fragment">Individuiamo le <b>"faccette"</b></p>
+                        <ul class="fragment">
+                            <li>famiglia olfattiva: fresco, floreale ecc.
+                            <li>sesso: uomo, donna
+                            <li>marca
+                            <li>prezzo
+                            <li>novità e offerte
+                        </ul>
+                        <p class="fragment">Individuiamo la modalità di interazione</p>
+                    </section>
+                </section>
+
+
+                <section>
+                    <h3>Le infografiche</h3>
+                    <p>"Una immagine che spiega qualcosa"</p>
+                    <a href="http://www.pinterest.com/mediamed/medical-infographics/" target="new">Esempi</a>
+                </section>
+
+                <section>
+                    <h3>Mappe mentali</h3>
+                    <p>Creo un grafico che connette le idee del cliente/utente</p>
+                    <img class="stretch" src="resources/mappe-mentali.png"/>
+                </section>
+
+                <section>
+                    <h3>ESERCIZIO: Facciamo le "nostre" mappe mentali</h3>
+                </section>
+
+                <section>
+                    <h3>ESERCIZIO: Partendo dalla mappa mentale fatta creiamo le personas</h3>
+                </section>
+
+                <section>
+                    <h3>ESERCIZIO: Partendo dalle mappe e dalle personas, creiamo una infografica</h3>
+                </section>
+
+                <section>
+                    <h3>Big Data Visualization</h3>
+                    <p><a href="http://www.hi.jpl.nasa.gov/datavis/" target="_blank">NASA Datavis Conference</a></p>
+                    <p><a href="http://www-958.ibm.com/software/analytics/manyeyes/" target="_blank">IBM Many Eyes</a></p>
+                </section>
+
+                <section>
+                    <h3>Datavis - Infovis</h3>
+                    <p><a href="http://datavis.tumblr.com/" target="_blank">We love datavis</a></p>
+                    <p><a href="http://www.infovis.info" target="_blank">Infovis.info</a></p>
+                </section>
+
+
+                <section>
+                    <h1>User experience design</h1>
+                </section>
+
+                <section>
+                    <video src="resources/YvesBehar_2008-480p-it.mp4" controls></video>
+                    <small>Yves Behar (designer fondatore di Fuseproject) sul progettare oggetti che raccontano storie</small>
+                </section>
+
+                <section>
+                    <a target="_blank" href="http://msdn.microsoft.com/en-us/library/dd834141.aspx">http://msdn.microsoft.com/en-us/library/dd834141.aspx</a>
+                    <br>
+                    <a target="_blank" href="https://www.facebook.com/note.php?note_id=118951047792">https://www.facebook.com/note.php?note_id=118951047792</a>
+                    <br>
+                    <a target="_blank" href="http://www.google.com/about/company/philosophy/">http://www.google.com/about/company/philosophy/</a>
+                    <br>
+                </section>
+
+                <section>
+                    <h2>Che cosa è il design?</h2>
+                    <ul>
+                        <li>Estetica: apparenza, stile, colore, forma...</li>
+                        <li>Funzionalità: come funziona, come interagiscono le componenti, quanto è efficiente...</li>
+                        <li>Comprensione: persone, dati, mercato, tendenze, competizione...</li>
+                        <li>Scopo: profitto, qualità, legame con il passato, felicità...</li>
+                        <li>Fattibilità: budget finanziario, tempo a disposizione, bisogni effettivi...</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Che cosa è il design dell'esperienza utente?</h2>
+                    <img class="stretch" src="resources/zen-diagram.jpg"/>
+                </section>
+
+
+                <section>
+                    <h2>Che cosa è il design dell'esperienza utente? (2)</h2>
+                    <img class="stretch" src="resources/elements_it.jpg"/>
+                </section>
+
+                <section>
+                    <h2>Che cosa è il design dell'esperienza utente? (3)</h2>
+                    <img class="stretch" src="resources/elements_simpleplanes.jpg"/>
+                </section>
+
+                <section>
+                    <h2>Che cosa è il design dell'esperienza utente? (4)</h2>
+                    <img class="stretch" src="resources/user-experience-design-diagram.jpg"/>
+                </section>
+
+                <section>
+                    <iframe width="1280" height="720" src="//www.youtube.com/embed/RrgjufJhmwk?rel=0" frameborder="0" allowfullscreen></iframe>
+                    <p>Chrome Web Lab, Science Museum, London</p>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Di cosa si occupa un UX designer</h2>
+                    </section>
+
+                    <section>
+                        <h3>Accessibilità</h3>
+                        <p>"Facile da usare", "con un facile accesso alle informazioni"</p>
+                    </section>
+
+                    <section>
+                        <h3>Scienza del comportamento</h3>
+                        <h3>Scienze cognitive</h3>
+                        <p>Puoi insegnare all'utente il modo migliore per usare il tuo software?</p>
+                        <p>Puoi modellare il comportamento dell'utente per trarne il maggior profitto possibile per te, per lui o per entrambi?</p>
+                    </section>
+
+                    <section>
+                        <h3>Best practices</h3>
+                        <p>Sono gli "standard", sono cose già ben collaudate e provate, che permettono di non reinventare ogni volta la ruota</p>
+                    </section>
+
+                    <section>
+                        <h3>Brand equity</h3>
+                        <p>E' il peso portato dal tuo brand, e che ti permette di instaurare un rapporto di fiducia con i tuoi utenti</p>
+                    </section>
+
+                    <section>
+                        <h3>Prototipazione</h3>
+                        <ul>
+                            <li>Wireframe. Niente click. Niente mouse. Niente colori. Serve a focalizzarsi sul contesto</li>
+                            <li>Mockup (poco più di un wireframe, ma con un minimo di interazione. Non dà ancora ideee su colori e stili)</li>
+                            <li>Prototipi a bassa fedeltà (HTML, frammenti di codice e stili per i test di colore e dimensioni)</li>
+                            <li>Prototipi ad alta fedeltà (JPG, PDF, HTML+Bootstrap+JQuery, ecc ecc)</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Architettura dell'informazione</h3>
+                        <p>L'architettura dell'informazione si focalizza sulle strutture.</p>
+                        <p>Lo user experience design si concentra sulle emozioni</p>
+                    </section>
+
+                    <section>
+                        <h3>Test d'utente</h3>
+                    </section>
+
+                    <section>
+                        <h3>Ricapitolando</h3>
+                        <a href="resources/Fundamentals-of-Experience-Design-stephenpa.png">Fundamentals of Experience Design</a>
+                    </section>
+
+                </section>
+
+
+                <section>
+                    <section>
+                        <h2>Design emozionale</h2>
+                        <p>Le emozioni influenzano in ogni momento il nostro modo di agire e di pensare, condizionando il nostro comportamento.
+                            Qualunque cosa facciamo o pensiamo è permeata dalle emozioni, le quali sono inseparabili dal processo cognitivo.
+                            Le emozioni modificano anche il modo in cui ci occupiamo e ci relazioniamo con gli oggetti
+                        </p>
+                    </section>
+
+                    <section>
+                        <video src="resources/DonNorman_2003-480p-it.mp4" controls></video>
+                        <small>Don Norman e i tre modi in cui il design rende felici</small>
+                    </section>
+
+                    <section>
+                        <h2>Design emozionale</h2>
+                        <p>E' un concetto centrale nella vita di tutti i giorni</p>
+                        <p>Piramide dei bisogni di Maslow</p>
+                        <img src="resources/bisogni.jpeg" class="stretch">
+                    </section>
+
+                    <section>
+                        <h2>Esiste una grandissima varietà di emozioni</h2>
+                        <p>Ruota delle emozioni di Robert Plutchik</p>
+                        <img class="stretch" src="resources/Robert-Plutchik-emotion-wheel.jpeg"/>
+                    </section>
+
+                    <section>
+                        <h2>Donald Norman: tre livelli emotivi</h2>
+                        <ul>
+                            <li><b>viscerale</b> (detto anche reattivo) è un livello automatico dove entrano in gioco i circuiti cerebrali basilari. Le emozioni sono risposte veloci come paura o disgusto. Questo è il livello dell'abitudinarietà, dove il cervello analizza il mondo circostante e vi risponde immediatamente.</li>
+                        </ul>
+                        <p>Il design viscerale si basa completamente sull'impatto emotivo immediato. Deve offrire una buona sensazione, avere un aspetto gradevole" . E' a livello viscerale che il design deve diventare "caramella per l'occhio"</p>
+                    </section>
+
+                    <section>
+                        <h2>Donald Norman: tre livelli emotivi</h2>
+                        <ul>
+
+                            <li><b>comportamentale</b> coincide con le attività corporee ed è quello che permette di effettuare operazioni abituali. I processi celebrali coinvolti a questo livello sono quelli che controllano il comportamento quotidiano. E' un livello di azione che lavora in modo non cosciente (è il livello che permette di guidare una macchina e pensare coscientemente a qualcos'altro). In questo livello sono incluse emozioni come frustrazione e noia.</li>
+
+                        </ul>
+                        <p>la progettazione grafica deve essere incentrata sull'utente in modo tale da evitare il manifestarsi di frustrazione e rabbia, causate di un design comportamentale mal concepito</p>
+                    </section>
+
+                    <section>
+                        <h2>Donald Norman: tre livelli emotivi</h2>
+                        <ul>
+                            <li><b>riflessivo</b> coinvolge la parte contemplativa del cervello che permette all'uomo di riflettere sul proprio agire. A questo livello agisce la riflessione e avviene l'apprendimento cosciente. Al livello riflessivo appartengono emozioni come orgoglio, imbarazzo e colpa.</li>
+                        </ul>
+                        <p>Il design riflessivo è completamente legato al messaggio, alla cultura e al significato di un prodotto e del suo impiego. Questo tipo di design riguarda il ricordo ed è legato al prodotto e all'immagine di sé che questo trasmette.</p>
+                    </section>
+
+                    <section>
+                        <h2>Donald Norman: tre livelli emotivi. Ricapitolando:</h2>
+                        <ul>
+                            <li class="fragment">Il livello viscerale è responsabile delle prime impressioni, quelle "a pelle"; nel design corrisponde all'apparenza.
+                            <li class="fragment">Il livello comportamentale riguarda l'utilizzo, l'esperienza del prodotto, in tutti i suoi possibili aspetti; nel design corrisponde al piacere ed efficacia d'uso.
+                            <li class="fragment">Il livello riflessivo, in ultimo, permette la formazione di un pensiero cosciente, di un'interpretazione e come tale molto permeabile alla cultura, all'educazione e alle differenze individuali; nel design corrisponde all'immagine di sé, alla soddisfazione personale.
+                        </ul>
+                    </section>
+
+
+                    <section>
+                        <h2>Desmet ed Hekkert: i prodotti come stimoli emotivi</h2>
+                        <ul>
+                            <li>il prodotto come <b>oggetto</b>: le emozioni che ne possono scaturire dipendono dalla sua gradevolezza estetica, dal target di consumatori associato a quel prodotto.
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Desmet ed Hekkert: i prodotti come stimoli emotivi</h2>
+                        <ul>
+                            <li>il prodotto come <b>mezzo</b>: l’oggetto da progettare è percepito come un tramite per ottenere un beneficio (per es.: se compro quella cosa, allora chi mi guarderà mi valuterà positivamente).
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Desmet ed Hekkert: i prodotti come stimoli emotivi</h2>
+                        <ul>
+                            <li>l prodotto come <b>evento</b>: le emozioni derivano dall’anticipazione che il possesso di tale oggetto significa per l’utente consumatore. Il designer si focalizzerà sul rendere l’oggetto desiderabile.
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Desmet ed Hekkert: i prodotti come stimoli emotivi, Ricapitolando:</h2>
+                        <ul>
+                            <li>il prodotto come <b>oggetto</b>: Il designer si concentra sul rendere l’oggetto attraente.
+                            <li>il prodotto come <b>mezzo</b>:I prodotti devono  ottenere prima di tutto l’approvazione e l’ammirazione del consumatore.
+                            <li>l prodotto come <b>evento</b>: Il designer si focalizza sul rendere l’oggetto desiderabile.
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Norman, Desmet ed Hekkert: punti di contatto</h3>
+                        <ul><li>Al design viscerale, corrisponde parzialmente, la valutazione del prodotto come oggetto, dove a fare da padroni sono gli aspetti estetici, in una parola, l’apparenza.
+                            <li>Al design comportamentale, corrisponde in parte, la valutazione del prodotto come mezzo, dove contano maggiormente lo standard e le convenzioni e le funzionalità attese.
+                            <li>Il design riflessivo invece trova corrispondenza soprattutto con la valutazione di un prodotto come evento, dove sono importanti l’immagine di sé e lo status sociale che si può acquisire attraverso il prodotto. Le componenti del design riflessivo sono presenti anche nel prodotto come oggetto (la valutazione positiva/negativa dell’oggetto in base al tipo di utenti che ne fa uso) e nel prodotto come mezzo (è importante la valutazione sociale che deriva dal suo utilizzo).
+                        </ul>
+                    </section>
+
+                    <section>
+                        <p>In un esperimento agli inizi degli anni ’90 la psicologa Alice Isen, insieme ad alcuni colleghi, ha dimostrato che lo stato di contentezza espande i processi intellettivi e facilita il pensiero creativo: di fronte alla richiesta di risolvere problemi difficili che richiedevano un modo di pensare insolito, i soggetti reagivano meglio quando avevano appena ricevuto un piccolo dono, sufficiente a farli star bene.</p>
+                    </section>
+
+                    <section>
+                        <p>Gli oggetti piacevoli permettono di lavorare meglio, rendono più semplice l'interazione e consentono di ottenere risultati più soddisfacenti.</p>
+                        <p> Ciò è stato dimostrato dagli esperimenti di due scienziati giapponesi, Masaaki Kurosu e Kaori Kashimura, nel 1995 e riconfermato dallo scienziato israeliano Noam Tractinsky nel 1997.</p>
+                    </section>
+                </section>
+
+
+                <section>
+                    <h1>Per una progettazione</h1>
+                </section>
+
+                <section>
+                    <h3>LEAN UX</h3>
+                    <ul>
+                        <li>Problem statement</li>
+                        <li>Ipotesi</li>
+                        <li>Outcomes</li>
+                        <li>Personas</li>
+                        <li>Features</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h1>Centrata sull'utente</h1>
+                </section>
+
+                <section>
+                    <blockquote>
+                        La Progettazione centrata sull'utente o in inglese: User-centered design (UCD) è una filosofia di progettazione e un processo nel quale ai bisogni, ai desideri e ai limiti dell'utente sul prodotto finale è data grande attenzione in ogni passo del processo di progettazione per massimizzare l'usabilità del prodotto stesso.
+                    </blockquote>
+                    <small>fonte: Wikipedia</small>
+                </section>
+
+                <section>
+                    <p>Il processo è stato definito e descritto da diversi autori e persino da alcune norme ISO, come la 13407, Human-centered design process. Diverse fonti descrivono processi leggermente diversi, ma guidati dalla stessa filosofia: fondare il progetto sulle esigenze degli utenti.</p>
+                    <p>La ISO 13407 stabilisce quattro attività principali per il processo di UCD:</p>
+                    <ol>
+                        <li class="fragment">Specificare il contesto d’uso
+                        <li class="fragment">Specificare i requisiti
+                        <li class="fragment">Creare delle soluzioni progettuali
+                        <li class="fragment">Valutare il design
+                    </ol>
+                </section>
+
+                <section>
+                    <p>Nella fase di <strong>analisi</strong> (1 e 2) tipicamente si compiono le seguenti attività:</p>
+
+                    <ul>
+                        <li>Incontri con gli stakeholder (portatori di interessi) per capire vincoli e aspettative</li>
+                        <li>Analizzare i prodotti esistenti</li>
+                        <li>Conduzione di osservazioni sul campo</li>
+                        <li>Conduzione di interviste con potenziali utenti</li>
+                        <li>Conduzione di workshop con potenziali utenti</li>
+                        <li>Questionari</li>
+                        <li>Creazione di profili di utente</li>
+                        <li>Creazione di elenchi di compiti</li>
+                        <li>Creazione di scenari</li>
+                        <li>Definizione di team multidisciplinari</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Nella fase in cui si lavora alla creazione di <strong>soluzioni progettuali</strong> si usano i seguenti strumenti:</p>
+
+                    <ul>
+                        <li>Brainstorming, riunioni e discussioni libere</li>
+                        <li>Creazione di modelli e schemi di navigazione</li>
+                        <li>Creazione di bozzetti e schermate, anche carta e matita</li>
+                        <li>Conduzione di analisi e simulazioni cognitive sui bozzetti</li>
+                        <li>Creazione di prototipi a bassa o alta fedeltà</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>La <strong>valutazione</strong> avviene prima e durante l’implementazione vera e propria del sistema, attraverso:</p>
+
+                    <ul>
+                        <li>Test con utenti</li>
+                        <li>Questionari</li>
+                        <li>Analisi euristiche e ispettive</li>
+                        <li>Simulazioni cognitive</li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <p>Ricapitolando: i principi fondamentali della UCD sono:</p>
+                    <ul>
+                        <li class="fragment">Una chiara comprensione dei requisiti, dei bisogni e dei task d'utente (understanding user, goal clarification)
+                        <li class="fragment">Incorporare il feedback d'utente per migliorare iterativamente il lavoro svolto attraverso la prototipazione (solution by design)
+                        <li class="fragment">Coinvolgere attivamente l'utente nella valutazione del design (user evaluation)
+                        <li class="fragment">Integrare lo UCD nelle altre attività di sviluppo affinchè non sia una attività a se stante
+                    </ul>
+                    <p>Si veda anche <a href="http://www.w3.org/WAI/redesign/ucd">http://www.w3.org/WAI/redesign/ucd</a> </p>
+                </section>
+
+                <section>
+                    <img src="resources/biglietteria.jpg" class="stretch"/>
+                </section>
+
+                <section>
+                    <img src="resources/215263735_115415d757_o.jpg" class="stretch"/>
+                    <p>Flytoget platform at Oslo</p>
+                </section>
+
+                <section>
+                    <h2>Possiamo vederlo in 6 step</h2>
+                    <ol>
+                        <li class="fragment">Definire il gruppo target</li>
+                        <li class="fragment">Creare le personas</li>
+                        <li class="fragment">Definire gli scenari applicativi</li>
+                        <li class="fragment">Definire gli use cases</li>
+                        <li class="fragment">Creare prototipi da testare</li>
+                        <li class="fragment">Iterare</li>
+                    </ol>
+
+                </section>
+
+
+                <section>
+                    <video src="resources/KateHartman_2011-480p-it.mp4" controls></video>
+                    <small>Kate Hartman (human interface designer): L'arte della comunicazione da indossare</small>
+                    <aside class="notes">
+                        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="resources/development_process.jpg" class="stretch"/>
+                </section>
+
+                <section>
+                    <h1>THE END</h1>
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				//Parallax scrolling
+				 parallaxBackgroundImage: 'resources/Some_people_sell_ballons_in_the_street.jpg',
+				 parallaxBackgroundSize: '4676px 2192px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+
+		</script>
+
+	</body>
+</html>
